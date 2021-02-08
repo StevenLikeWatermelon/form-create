@@ -14,11 +14,11 @@ export default {
         },
     },
     render(h, ctx) {
-        return <ElSelect {...ctx.data}>{ctx.props.options.map((props, index) => {
+        return <XlSelect {...ctx.data}>{ctx.props.options.map((props, index) => {
 
             const slot = props.slot ? toDefSlot(props.slot, h) : [];
 
-            return <ElOption {...{props}}
+            return <XlOption {...{props}}
                 key={NAME + index + ctx.props.unique}>{slot}</ElOption>
         }).concat(ctx.chlidren)}</ElSelect>;
     }

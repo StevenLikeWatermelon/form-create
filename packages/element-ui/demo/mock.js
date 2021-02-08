@@ -131,7 +131,7 @@ function mock() {
 
 
         //自定义组件
-        maker.createTmp('<el-button @click="onClick" style="width:100%;" :disabled="disabled">{{button}}字符串测试{{test}}-{{num}}</el-button>', function (){
+        maker.createTmp('<xl-button @click="onClick" style="width:100%;" :disabled="disabled">{{button}}字符串测试{{test}}-{{num}}</el-button>', function (){
             return new Vue({
                 data: function () {
                     return {

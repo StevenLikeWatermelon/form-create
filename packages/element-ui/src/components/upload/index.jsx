@@ -112,7 +112,7 @@ export default {
                 on-click={() => this.handleClick(file)} key={this.key('hi' + index)}/>;
         },
         makeProgress(file, index) {
-            return <ElProgress props={{percentage: file.percentage, type: 'circle', width: 52}} style="margin-top:2px;"
+            return <XlProgress props={{percentage: file.percentage, type: 'circle', width: 52}} style="margin-top:2px;"
                 key={this.key('pg' + index)}/>
         },
         makeIcons(file, index) {
@@ -131,7 +131,7 @@ export default {
                 class={style['fc-files']}>{(file.percentage !== undefined && file.status !== 'success') ? this.makeProgress(file, index) : [this.makeItem(file, index), this.makeIcons(file, index)]}</div>);
         },
         makeUpload() {
-            return <ElUpload ref="upload"
+            return <XlUpload ref="upload"
                 style={{display: 'inline-block'}} {...this.ctx}
                 key={this.key('upload')}>{this.children}</ElUpload>;
         },
@@ -163,7 +163,7 @@ export default {
                 [style['fc-upload']]: true,
                 [style['fc-hide-btn']]: !isShow
             }}>{[this.ctx.props.showFileList ? [] : this.makeFiles(), this.makeUpload()]}
-                <el-dialog modal={this.previewMask} title={this.modalTitle} visible={this.previewVisible}
+                <xl-dialog modal={this.previewMask} title={this.modalTitle} visible={this.previewVisible}
                     on-close={this.handleCancel}>
                     <img alt="example" style="width: 100%" src={this.previewImage}/>
                 </el-dialog>

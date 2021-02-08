@@ -16,7 +16,7 @@ export default {
         },
     },
     render(h, ctx) {
-        return <ElRadioGroup {...ctx.data}>{ctx.props.options.map((opt, index) => {
+        return <XlRadioGroup {...ctx.data}>{ctx.props.options.map((opt, index) => {
             const props = {...opt};
             const Type = ctx.props.type === 'button' ? 'ElRadioButton' : 'ElRadio';
             delete props.value;

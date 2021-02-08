@@ -28,7 +28,7 @@ export default {
     },
     methods: {
         makeTree() {
-            return <ElTree ref="tree" on-check-change={() => this.updateValue()}
+            return <XlTree ref="tree" on-check-change={() => this.updateValue()}
                 on-node-click={() => this.updateValue()} {...this.ctx}>{this.children}</ElTree>;
         },
         onChange() {

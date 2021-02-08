@@ -47,7 +47,7 @@ export default {
         this.update();
     },
     render() {
-        return <ElCheckboxGroup {...this.ctx} v-model={this.trueValue}
+        return <XlCheckboxGroup {...this.ctx} v-model={this.trueValue}
             on-input={this.onInput}>{this.options.map((opt, index) => {
                 const props = {...opt};
                 const Type = this.type === 'button' ? 'ElCheckboxButton' : 'ElCheckbox';

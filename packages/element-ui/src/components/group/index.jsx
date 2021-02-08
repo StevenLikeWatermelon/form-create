@@ -192,16 +192,16 @@ export default {
                 on-click={this.add}/>) :
             <div key={'con'}>{keys.map((key, index) => {
                 const rule = this.cacheRule[key];
-                return <ElRow align="middle" type="flex" key={key}
+                return <XlRow align="middle" type="flex" key={key}
                     style="background-color:#f5f7fa;padding:10px;border-radius:5px;margin-bottom:10px;">
-                    <ElCol span={button ? 20 : 24}><ElFormItem><FormCreate
+                    <XlCol span={button ? 20 : 24}><XlFormItem><FormCreate
                         on-change={this.formData}
                         on-set-value={this.formData}
                         on-on-reload={this.formData}
                         on-emit-event={(name, ...args) => this.emitEvent(name, args, index, key)}
                         on-mounted={($f) => this.add$f(index, key, $f)} rule={rule}
                         option={this.option}/></ElFormItem></ElCol>
-                    {button ? <ElCol span={2} pull={1} push={1}>{this.makeIcon(keys.length, index, key)}</ElCol> : null}
+                    {button ? <XlCol span={2} pull={1} push={1}>{this.makeIcon(keys.length, index, key)}</ElCol> : null}
                 </ElRow>
             })}</div>
     }

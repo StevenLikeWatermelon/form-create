@@ -1,6 +1,6 @@
 {
-    "name": "form-create",
-    "private": true,
+    "name": "xl-form-create",
+    "private": false,
     "scripts": {
         "build": "lerna run build",
         "dev:ele": "cross-env UI_LiB=element-ui webpack-dev-server --config=./scripts/webpack.config.ele.js",
