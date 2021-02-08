@@ -1,5 +1,5 @@
 {
-  "name": "@form-create/ant-design-vue",
+  "name": "@xl-form-create/ant-design-vue",
   "version": "1.0.20",
   "description": "ant-design-vue 版表单生成器|ant-design-vue Form builder with dynamic rendering, data collection, validation and submission capabilities, built-in 17 common form components, support for two-way data binding, event extension, and support for building built-in components and any vue components using json.",
   "main": "./dist/form-create.min.js",
@@ -16,7 +16,7 @@
     "url": "git+https://github.com/xaboy/form-create.git"
   },
   "keywords": [
-    "@form-create",
+    "@xl-form-create",
     "form-builder",
     "form",
     "components",
@@ -41,8 +41,8 @@
   },
   "homepage": "http://www.form-create.com",
   "dependencies": {
-    "@form-create/core": "^1.0.20",
-    "@form-create/utils": "^1.0.15",
+    "@xl-form-create/core": "^1.0.20",
+    "@xl-form-create/utils": "^1.0.15",
     "ant-design-vue": "^1.7.1",
     "moment": "^2.24.0"
   },

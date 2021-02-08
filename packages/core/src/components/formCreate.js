@@ -1,4 +1,4 @@
-import {deepExtend} from '@form-create/utils';
+import {deepExtend} from '@xl-form-create/utils';
 
 export const formCreateName = 'FormCreate';
 

@@ -1,4 +1,4 @@
-import {creatorFactory} from '@form-create/core';
+import {creatorFactory} from '@xl-form-create/core';
 import datePicker from './datePicker';
 import frame from './frame';
 import input from './input';

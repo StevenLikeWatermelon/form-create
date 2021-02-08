@@ -1,5 +1,5 @@
 import VData from './vData';
-import {toString, uniqueId} from '@form-create/utils';
+import {toString, uniqueId} from '@xl-form-create/utils';
 import VNode from './vNode';
 
 export default class BaseParser {

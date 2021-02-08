@@ -1,4 +1,4 @@
-import {$set, deepExtend, errMsg, isFunction, isPlainObject, isUndef} from '@form-create/utils';
+import {$set, deepExtend, errMsg, isFunction, isPlainObject, isUndef} from '@xl-form-create/utils';
 import {toJson} from './util';
 import {getRule} from './handle';
 

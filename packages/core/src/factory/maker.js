@@ -1,6 +1,6 @@
 import Creator, {creatorFactory} from './creator';
 import {parseJson, enumerable} from '../core/util';
-import {extend, isPlainObject, isString, isValidChildren} from '@form-create/utils';
+import {extend, isPlainObject, isString, isValidChildren} from '@xl-form-create/utils';
 
 
 const commonMaker = creatorFactory('');

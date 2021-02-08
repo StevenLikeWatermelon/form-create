@@ -1,6 +1,6 @@
 import {iviewConfig} from '../../core/config';
 import style from '../../style/index.css';
-import {isUndef, toArray, uniqueId} from '@form-create/utils';
+import {isUndef, toArray, uniqueId} from '@xl-form-create/utils';
 
 const NAME = 'fc-ivu-frame';
 

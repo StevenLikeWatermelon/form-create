@@ -3,7 +3,7 @@ import parsers from '../parsers';
 import getConfig from './config';
 import nodes from './nodes';
 import formRender from './form';
-import createFormCreate, {VNode} from '@form-create/core';
+import createFormCreate, {VNode} from '@xl-form-create/core';
 import makers from '../makers';
 import modelEvents from './modelEvents';
 

@@ -3,9 +3,9 @@ import parsers from '../parsers';
 import getConfig from './config';
 import nodes from './nodes';
 import formRender from './form';
-import createFormCreate, {Creator, VNode} from '@form-create/core';
+import createFormCreate, {Creator, VNode} from '@xl-form-create/core';
 import makers from '../makers';
-import {isPlainObject, toString} from '@form-create/utils';
+import {isPlainObject, toString} from '@xl-form-create/utils';
 
 VNode.use(nodes);
 

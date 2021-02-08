@@ -1,4 +1,4 @@
-import {$set, deepExtend, extend, isFunction, isPlainObject} from '@form-create/utils';
+import {$set, deepExtend, extend, isFunction, isPlainObject} from '@xl-form-create/utils';
 import VData from './vData';
 
 function baseRule() {

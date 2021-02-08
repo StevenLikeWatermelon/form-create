@@ -1,6 +1,6 @@
 import {iviewConfig} from '../../core/config';
-import {copyRules} from '@form-create/core';
-import {deepExtendArgs} from '@form-create/utils';
+import {copyRules} from '@xl-form-create/core';
+import {deepExtendArgs} from '@xl-form-create/utils';
 
 const NAME = 'fc-ivu-group';
 

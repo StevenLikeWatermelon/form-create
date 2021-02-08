@@ -1,4 +1,4 @@
-import {isFunction, isString, toString} from '@form-create/utils';
+import {isFunction, isString, toString} from '@xl-form-create/utils';
 
 function parseVData(data) {
     if (isString(data))

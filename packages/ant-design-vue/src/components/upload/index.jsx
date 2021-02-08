@@ -1,4 +1,4 @@
-import {deepExtend, hasSlot, toString} from '@form-create/utils';
+import {deepExtend, hasSlot, toString} from '@xl-form-create/utils';
 import style from '../../style/index.css';
 
 const parseFile = function (file, uid) {

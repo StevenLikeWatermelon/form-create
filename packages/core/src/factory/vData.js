@@ -1,4 +1,4 @@
-import {isPlainObject, isUndef, toString} from '@form-create/utils';
+import {isPlainObject, isUndef, toString} from '@xl-form-create/utils';
 import mergeJsxProps from '../core/mergeJsxProps';
 
 function defVData() {

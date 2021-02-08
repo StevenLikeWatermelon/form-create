@@ -1,5 +1,5 @@
-import {isFunction, isString, preventDefault} from '@form-create/utils';
-import {BaseForm} from '@form-create/core';
+import {isFunction, isString, preventDefault} from '@xl-form-create/utils';
+import {BaseForm} from '@xl-form-create/core';
 import style from '../style/index.css';
 import {iviewConfig} from './config';
 

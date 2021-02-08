@@ -1,10 +1,11 @@
 /*!
- * @form-create/core v1.0.20
- * (c) 2018-2020 xaboy
+ * @xl-form-create/core v1.0.20
+ * (c) 2018-2021 xaboy
  * Github https://github.com/xaboy/form-create
  * Released under the MIT License.
  */
 import _mergeJSXProps from '@vue/babel-helper-vue-jsx-merge-props';
+import { deepExtend, isUndef, isPlainObject, toString, isFunction, $set, extend, isString, isValidChildren, uniqueId, debounce, errMsg, toLine, $del, isElement, isBool, deepExtendArgs } from '@xl-form-create/utils';
 import Vue from 'vue';
 
 function _typeof(obj) {
@@ -157,121 +158,6 @@ function _iterableToArray(iter) {
 
 function _nonIterableSpread() {
   throw new TypeError("Invalid attempt to spread non-iterable instance");
-}
-
-function $set(target, field, value) {
-  Vue.set(target, field, value);
-}
-function $del(target, field) {
-  Vue.delete(target, field);
-}
-function isValidChildren(children) {
-  return Array.isArray(children) && children.length > 0;
-}
-var _toString = Object.prototype.toString;
-function isUndef(v) {
-  return v === undefined || v === null;
-}
-function toString(val) {
-  return val == null ? '' : _typeof(val) === 'object' ? JSON.stringify(val, null, 2) : String(val);
-}
-function extend(to, _from) {
-  for (var key in _from) {
-    $set(to, key, _from[key]);
-  }
-
-  return to;
-}
-function debounce(fn, wait) {
-  var timeout = null;
-  return function () {
-    for (var _len = arguments.length, arg = new Array(_len), _key = 0; _key < _len; _key++) {
-      arg[_key] = arguments[_key];
-    }
-
-    if (timeout !== null) clearTimeout(timeout);
-    timeout = setTimeout(function () {
-      return fn.apply(void 0, arg);
-    }, wait);
-  };
-}
-function isType(arg, type) {
-  return _toString.call(arg) === '[object ' + type + ']';
-}
-function isPlainObject(arg) {
-  return isType(arg, 'Object');
-}
-function isFunction(arg) {
-  return isType(arg, 'Function');
-}
-function isString(arg) {
-  return isType(arg, 'String');
-}
-function isBool(arg) {
-  return isType(arg, 'Boolean');
-}
-function toLine(name) {
-  var line = name.replace(/([A-Z])/g, '-$1').toLowerCase();
-  if (line.indexOf('-') === 0) line = line.substr(1);
-  return line;
-}
-function isElement(arg) {
-  return _typeof(arg) === 'object' && arg !== null && arg.nodeType === 1 && !isPlainObject(arg);
-}
-function deepExtend(origin) {
-  var target = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-  var mode = arguments.length > 2 ? arguments[2] : undefined;
-  var isArr = false;
-
-  for (var key in target) {
-    if (Object.prototype.hasOwnProperty.call(target, key)) {
-      var clone = target[key];
-
-      if ((isArr = Array.isArray(clone)) || isPlainObject(clone)) {
-        var nst = origin[key] === undefined;
-
-        if (isArr) {
-          isArr = false;
-          nst && $set(origin, key, []);
-        } else if (clone._clone) {
-          clone = clone._clone();
-
-          if (mode) {
-            clone = clone.getRule();
-            nst && $set(origin, key, {});
-          } else {
-            $set(origin, key, clone);
-            continue;
-          }
-        } else {
-          nst && $set(origin, key, {});
-        }
-
-        deepExtend(origin[key], clone, mode);
-      } else {
-        $set(origin, key, clone);
-      }
-    }
-  }
-
-  return origin;
-}
-function deepExtendArgs(origin) {
-  for (var _len2 = arguments.length, lst = new Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++) {
-    lst[_key2 - 1] = arguments[_key2];
-  }
-
-  lst.forEach(function (target) {
-    origin = deepExtend(origin, target);
-  });
-  return origin;
-}
-var id = 0;
-function uniqueId() {
-  return ++id;
-}
-function errMsg(i) {
-  return '\n\x67\x69\x74\x68\x75\x62\x3a\x68\x74\x74\x70' + '\x73\x3a\x2f\x2f\x67\x69\x74\x68\x75\x62\x2e\x63\x6f' + '\x6d\x2f\x78\x61\x62\x6f\x79\x2f\x66\x6f\x72\x6d\x2d' + '\x63\x72\x65\x61\x74\x65\n\x64\x6f\x63\x75\x6d\x65' + '\x6e\x74\x3a\x68\x74\x74\x70\x3a\x2f\x2f\x77\x77\x77' + '\x2e\x66\x6f\x72\x6d\x2d\x63\x72\x65\x61\x74\x65\x2e' + '\x63\x6f\x6d' + (i || '');
 }
 
 var formCreateName = 'FormCreate';

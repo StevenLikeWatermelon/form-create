@@ -1,6 +1,6 @@
 /*!
- * @form-create/data v1.0.11
- * (c) 2018-2020 xaboy
+ * @xl-form-create/data v1.0.11
+ * (c) 2018-2021 xaboy
  * Github https://github.com/xaboy/form-create
  * Released under the MIT License.
  */

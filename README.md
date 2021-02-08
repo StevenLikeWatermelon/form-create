@@ -9,8 +9,8 @@
 
 [![MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/xaboy/form-create)
 [![github](https://img.shields.io/badge/Author-xaboy-blue.svg)](https://github.com/xaboy)
-[![version](https://badge.fury.io/js/@form-create%2Fcore.svg)](https://www.npmjs.com/package/@form-create/core)
-[![npm](https://img.shields.io/npm/dt/@form-create/core.svg)](https://www.npmjs.com/package/@form-create/core)
+[![version](https://badge.fury.io/js/@xl-form-create%2Fcore.svg)](https://www.npmjs.com/package/@xl-form-create/core)
+[![npm](https://img.shields.io/npm/dt/@xl-form-create/core.svg)](https://www.npmjs.com/package/@xl-form-create/core)
 [![document](https://img.shields.io/badge/Doc-welcome-red.svg)](http://www.form-create.com/en/v2/)
 
 
@@ -71,10 +71,10 @@ If you have a form component suitable for form-create, please feel free to [clic
 
 | Name               | Description                                                |
 | ------------------ | ---------------------------------------------------------- |
-| @form-create/iview     | [iView Version](http://form-create.com/en/v2/iview/) |
-| @form-create/iview4     | [iView V4 Version](http://form-create.com/en/v2/iview/) |
-| @form-create/element-ui | [ElementUI Version](http://form-create.com/en/v2/element-ui/)     |
-| @form-create/ant-design-vue | [Ant-design-vue Version](http://form-create.com/en/v2/ant-design-vue/)     |
+| @xl-form-create/iview     | [iView Version](http://form-create.com/en/v2/iview/) |
+| @xl-form-create/iview4     | [iView V4 Version](http://form-create.com/en/v2/iview/) |
+| @xl-form-create/element-ui | [ElementUI Version](http://form-create.com/en/v2/element-ui/)     |
+| @xl-form-create/ant-design-vue | [Ant-design-vue Version](http://form-create.com/en/v2/ant-design-vue/)     |
 
 
 
@@ -101,22 +101,22 @@ If you have a form component suitable for form-create, please feel free to [clic
 
 iview 2.x|3.x
 ```shell
-npm install @form-create/iview
+npm install @xl-form-create/iview
 ```
 
 iview 4.x
 ```shell
-npm install @form-create/iview4
+npm install @xl-form-create/iview4
 ```
 
 elementUI
 ```shell
-npm install @form-create/element-ui
+npm install @xl-form-create/element-ui
 ```
 
 ant-design-vue
 ```shell
-npm install @form-create/ant-design-vue
+npm install @xl-form-create/ant-design-vue
 ```
 
 ## Import
@@ -132,7 +132,7 @@ iviewUI
 <!-- import iView -->
 <script src="//unpkg.com/iview/dist/iview.min.js"></script>
 <!-- import form-create/iview -->
-<script src="//unpkg.com/@form-create/iview/dist/form-create.min.js"></script>
+<script src="//unpkg.com/@xl-form-create/iview/dist/form-create.min.js"></script>
 ```
 
 elementUI
@@ -144,7 +144,7 @@ elementUI
 <!-- import element -->
 <script src="https://unpkg.com/element-ui/lib/index.js"></script>
 <!-- import form-create/element -->
-<script src="//unpkg.com/@form-create/element-ui/dist/form-create.min.js"></script>
+<script src="//unpkg.com/@xl-form-create/element-ui/dist/form-create.min.js"></script>
 ```
 
 ant-design-vue
@@ -159,26 +159,26 @@ ant-design-vue
 <!-- import ant-design-vue -->
 <script defer src="https://unpkg.com/ant-design-vue@1.5.3/dist/antd.js"></script>
 <!-- import form-create -->
-<script src="//unpkg.com/@form-create/ant-design-vue/dist/form-create.min.js"></script>
+<script src="//unpkg.com/@xl-form-create/ant-design-vue/dist/form-create.min.js"></script>
 ```
 
 **NodeJs:**
 
 iviewUI
 ```js
-import formCreate from '@form-create/iview'
+import formCreate from '@xl-form-create/iview'
 Vue.use(formCreate)
 ```
 
 ElementUI
 ```js
-import formCreate from '@form-create/element-ui'
+import formCreate from '@xl-form-create/element-ui'
 Vue.use(formCreate)
 ```
 
 ant-design-vue
 ```js
-import formCreate from '@form-create/ant-design-vue'
+import formCreate from '@xl-form-create/ant-design-vue'
 Vue.use(formCreate)
 ```
 

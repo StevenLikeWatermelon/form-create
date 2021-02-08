@@ -11,7 +11,7 @@ import {
     toString,
     uniqueId,
     isFunction
-} from '@form-create/utils';
+} from '@xl-form-create/utils';
 import BaseParser from '../factory/parser';
 import Render from './render';
 import Api from './api';

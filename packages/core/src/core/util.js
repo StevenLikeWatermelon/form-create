@@ -1,4 +1,4 @@
-import {deepExtend, isUndef} from '@form-create/utils';
+import {deepExtend, isUndef} from '@xl-form-create/utils';
 
 const PREFIX = '[[FORM-CREATE-PREFIX-';
 const SUFFIX = '-FORM-CREATE-SUFFIX]]';

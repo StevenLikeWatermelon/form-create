@@ -1,4 +1,4 @@
-import {toArray} from '@form-create/utils';
+import {toArray} from '@xl-form-create/utils';
 
 
 export default {

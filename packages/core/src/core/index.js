@@ -6,7 +6,7 @@ import {
     isElement,
     toString,
     isPlainObject
-} from '@form-create/utils';
+} from '@xl-form-create/utils';
 import $FormCreate from '../components/formCreate';
 import {formCreateName} from '../components/formCreate';
 import Vue from 'vue';

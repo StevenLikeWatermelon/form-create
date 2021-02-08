@@ -1,5 +1,5 @@
-import {BaseParser} from '@form-create/core';
-import {toArray} from '@form-create/utils';
+import {BaseParser} from '@xl-form-create/core';
+import {toArray} from '@xl-form-create/utils';
 
 export default class parser extends BaseParser {
 

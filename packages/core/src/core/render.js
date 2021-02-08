@@ -1,5 +1,5 @@
 import {_vue as Vue} from './index';
-import {debounce, errMsg, isFunction, isString, isUndef, isValidChildren} from '@form-create/utils';
+import {debounce, errMsg, isFunction, isString, isUndef, isValidChildren} from '@xl-form-create/utils';
 import VNode from '../factory/vNode';
 import VData, {vdataField} from '../factory/vData';
 

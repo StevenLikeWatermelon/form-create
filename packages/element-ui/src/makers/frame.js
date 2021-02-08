@@ -1,4 +1,4 @@
-import {creatorTypeFactory} from '@form-create/core';
+import {creatorTypeFactory} from '@xl-form-create/core';
 
 const name = 'frame';
 

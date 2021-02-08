@@ -1,4 +1,4 @@
-import {BaseParser} from '@form-create/core';
+import {BaseParser} from '@xl-form-create/core';
 import moment from 'moment';
 
 const FORMAT_TYPE = {

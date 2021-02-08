@@ -1,5 +1,5 @@
 import {Button, Col, Option, Row} from "view-design";
-import FormCreate from "@form-create/core";
+import FormCreate from "@xl-form-create/core";
 import Vue from "vue";
 
 export default formCreate;

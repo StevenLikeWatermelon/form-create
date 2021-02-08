@@ -1,4 +1,4 @@
-import {toArray, uniqueId, isUndef} from '@form-create/utils';
+import {toArray, uniqueId, isUndef} from '@xl-form-create/utils';
 import style from '../../style/index.css';
 
 const NAME = 'fc-antd-frame';

@@ -1,6 +1,6 @@
 import VData from './vData';
 import VNode from './vNode';
-import {deepExtendArgs, uniqueId} from '@form-create/utils';
+import {deepExtendArgs, uniqueId} from '@xl-form-create/utils';
 
 
 export default class BaseForm {

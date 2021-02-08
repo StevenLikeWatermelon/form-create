@@ -1,4 +1,4 @@
-import {uniqueId} from '@form-create/utils';
+import {uniqueId} from '@xl-form-create/utils';
 
 const NAME = 'fc-ivu-radio';
 

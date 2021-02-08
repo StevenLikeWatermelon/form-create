@@ -1,4 +1,4 @@
-import {BaseParser} from '@form-create/core';
+import {BaseParser} from '@xl-form-create/core';
 
 export default class parser extends BaseParser {
 

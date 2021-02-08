@@ -1,5 +1,5 @@
-import {isFunction, preventDefault, toString, isString, isType} from '@form-create/utils';
-import {BaseForm} from '@form-create/core';
+import {isFunction, preventDefault, toString, isString, isType} from '@xl-form-create/utils';
+import {BaseForm} from '@xl-form-create/core';
 import style from '../style/index.css';
 
 const upperCaseReg = /[A-Z]/;
