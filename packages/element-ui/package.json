@@ -1,6 +1,6 @@
 {
-    "name": "@xl-form-create/element-ui",
-    "version": "1.0.20",
+    "name": "xl-form-create",
+    "version": "1.0.21",
     "description": "element-ui版表单生成器|Element-ui Form builder with dynamic rendering, data collection, validation and submission capabilities, built-in 17 common form components, support for two-way data binding, event extension, and support for building built-in components and any vue components using json.",
     "main": "./dist/form-create.min.js",
     "module": "./dist/form-create.min.js",
@@ -12,11 +12,10 @@
         "build": "npm-run-all clean bili"
     },
     "repository": {
-        "type": "git",
-        "url": "git+https://github.com/xaboy/form-create.git"
+        "type": "git"
     },
     "keywords": [
-        "@xl-form-create",
+        "form-create",
         "form-builder",
         "form",
         "components",
@@ -34,15 +33,12 @@
         "dist"
     ],
     "typings": "./types/index.d.ts",
-    "author": "xaboy",
+    "author": "stevenLikeWatermelon",
     "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/xaboy/form-create/issues"
-    },
     "homepage": "http://www.form-create.com",
     "dependencies": {
-        "@xl-form-create/core": "^1.0.20",
-        "@xl-form-create/utils": "^1.0.15",
+        "@form-create/core": "^1.0.20",
+        "@form-create/utils": "^1.0.15",
         "element-ui": "^2.8.2"
     },
     "publishConfig": {

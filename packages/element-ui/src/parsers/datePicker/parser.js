@@ -1,4 +1,4 @@
-import {BaseParser} from '@xl-form-create/core';
+import {BaseParser} from '@form-create/core';
 
 const DEFAULT_FORMATS = {
     date: 'yyyy-MM-dd',

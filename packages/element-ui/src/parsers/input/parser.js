@@ -1,5 +1,5 @@
-import {BaseParser} from '@xl-form-create/core';
-import {$set} from '@xl-form-create/utils';
+import {BaseParser} from '@form-create/core';
+import {$set} from '@form-create/utils';
 
 
 export default class Parser extends BaseParser {

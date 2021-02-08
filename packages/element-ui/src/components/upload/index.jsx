@@ -1,4 +1,4 @@
-import {hasSlot, toArray, toString, uniqueId} from '@xl-form-create/utils';
+import {hasSlot, toArray, toString, uniqueId} from '@form-create/utils';
 import style from '../../style/index.css';
 
 function parseFile(file, i) {

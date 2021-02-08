@@ -1,4 +1,4 @@
-import {creatorTypeFactory} from '@xl-form-create/core';
+import {creatorTypeFactory} from '@form-create/core';
 
 const name = 'datePicker';
 
