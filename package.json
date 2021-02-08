@@ -1,65 +1,47 @@
 {
     "name": "xl-form-create",
-    "private": false,
+    "version": "1.0.22",
+    "description": "element-ui版表单生成器|Element-ui Form builder with dynamic rendering, data collection, validation and submission capabilities, built-in 17 common form components, support for two-way data binding, event extension, and support for building built-in components and any vue components using json.",
+    "main": "./dist/form-create.min.js",
+    "module": "./dist/form-create.min.js",
+    "unpkg": "./dist/form-create.min.js",
+    "jsdelivr": "./dist/form-create.min.js",
     "scripts": {
-        "build": "lerna run build",
-        "dev:ele": "cross-env UI_LiB=element-ui webpack-dev-server --config=./scripts/webpack.config.ele.js",
-        "dev:iview": "cross-env UI_LiB=iview webpack-dev-server --config=./scripts/webpack.config.iview.js",
-        "dev:iview4": "cross-env UI_LiB=iview4 webpack-dev-server --config=./scripts/webpack.config.iview4.js",
-        "dev:antd": "cross-env UI_LiB=ant-design-vue webpack-dev-server --config=./scripts/webpack.config.antd.js",
-        "dev": "xxx",
-        "commit": "git cz",
-        "lint": "eslint *.js",
-        "clear-all": "rimraf package-lock.json packages/*/node_modules packages/*/package-lock.json",
-        "bootstrap": "npm run clear-all && npm i && npm-run-all bootstrap:lerna",
-        "bootstrap:lerna": "lerna bootstrap -- --ignore-engines"
+        "clean": "rimraf dist/",
+        "bili": "cross-env UI_LIB=element-ui bili",
+        "build": "npm-run-all clean bili"
     },
-    "devDependencies": {
-        "babel-eslint": "^10.0.3",
-        "bili": "^4.8.1",
-        "chalk": "^2.4.2",
-        "commitizen": "^3.1.2",
-        "cross-env": "^5.2.1",
-        "css-loader": "^2.1.1",
-        "cz-conventional-changelog": "^2.1.0",
-        "cz-customizable": "^6.2.0",
-        "eslint": "^5.16.0",
-        "eslint-plugin-vue": "^5.2.3",
-        "html-webpack-plugin": "^3.2.0",
-        "husky": "^2.7.0",
-        "lerna": "^3.18.5",
-        "lint-staged": "^8.2.1",
-        "npm-run-all": "^4.1.5",
-        "rimraf": "^2.7.1",
-        "vue": "^2.6.10",
-        "vue-loader": "^15.7.2",
-        "vue-style-loader": "^4.1.2",
-        "vue-template-compiler": "^2.6.10",
-        "webpack": "^4.41.2",
-        "webpack-chain": "^6.0.0",
-        "webpack-cli": "^3.3.10",
-        "webpack-dev-server": "^3.9.0",
-        "webpack-merge": "^4.2.2"
+    "repository": {
+        "type": "git"
     },
-    "config": {
-        "commitizen": {
-            "path": "./node_modules/cz-customizable"
-        }
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged"
-        }
-    },
-    "lint-staged": {
-        "*.{js,jsx,vue}": [
-            "eslint --fix",
-            "git add"
-        ]
-    },
+    "keywords": [
+        "form-create",
+        "form-builder",
+        "form",
+        "components",
+        "vue.js",
+        "element-ui",
+        "json-form",
+        "vue-json-form"
+    ],
+    "files": [
+        "README.md",
+        "package.json",
+        "LICENSE",
+        "src",
+        "types",
+        "dist"
+    ],
+    "typings": "./types/index.d.ts",
+    "author": "stevenLikeWatermelon",
+    "license": "MIT",
+    "homepage": "http://www.form-create.com",
     "dependencies": {
-        "@vue/cli-plugin-babel": "^3.12.1",
-        "rollup-plugin-commonjs": "^10.1.0",
-        "rollup-plugin-vue": "^5.1.2"
+        "@form-create/core": "^1.0.20",
+        "@form-create/utils": "^1.0.15",
+        "element-ui": "^2.8.2"
+    },
+    "publishConfig": {
+        "access": "public"
     }
 }
