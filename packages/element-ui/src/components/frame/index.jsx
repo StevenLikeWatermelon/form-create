@@ -178,7 +178,7 @@ export default {
                 {this.fileList.length ? <i slot="suffix" class="el-input__icon el-icon-circle-close"
                     on-click={() => this.fileList = []}/> : null}
                 <XlButton icon={this.icon} on={{'click': () => this.showModel()}} slot="append"/>
-            </ElInput>
+            </XlInput>
         },
 
         makeGroup(children) {
@@ -280,9 +280,9 @@ export default {
             if (!footer) return;
             return <div slot="footer">
                 {closeBtn ? <XlButton
-                    on-click={() => (this.onCancel() !== false && this.closeModel(true))}>{closeBtnText}</ElButton> : null}
+                    on-click={() => (this.onCancel() !== false && this.closeModel(true))}>{closeBtnText}</XlButton> : null}
                 {okBtn ? <XlButton type="primary"
-                    on-click={() => (this.onOk() !== false && this.closeModel())}>{okBtnText}</ElButton> : null}
+                    on-click={() => (this.onOk() !== false && this.closeModel())}>{okBtnText}</XlButton> : null}
             </div>
         }
     },
@@ -307,7 +307,7 @@ export default {
             <xl-dialog modal={this.previewMask} title={modalTitle} visible={this.previewVisible}
                 on-close={this.handleCancel}>
                 <img alt="example" style="width: 100%" src={this.previewImage}/>
-            </el-dialog>
+            </xl-dialog>
             <xl-dialog props={{width, title, ...this.modal}} visible={this.frameVisible}
                 on-close={() => (this.closeModel(true))}>
                 {(this.frameVisible || !this.reload) ? <iframe ref="frame" src={src} frameBorder="0" style={{
@@ -316,7 +316,7 @@ export default {
                     'width': '100%'
                 }}/> : null}
                 {this.makeFooter()}
-            </el-dialog>
+            </xl-dialog>
         </div>
     }
 }

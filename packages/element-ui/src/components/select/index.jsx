@@ -19,7 +19,7 @@ export default {
             const slot = props.slot ? toDefSlot(props.slot, h) : [];
 
             return <XlOption {...{props}}
-                key={NAME + index + ctx.props.unique}>{slot}</ElOption>
-        }).concat(ctx.chlidren)}</ElSelect>;
+                key={NAME + index + ctx.props.unique}>{slot}</XlOption>
+        }).concat(ctx.chlidren)}</XlSelect>;
     }
 }

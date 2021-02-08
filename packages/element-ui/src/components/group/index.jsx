@@ -200,9 +200,9 @@ export default {
                         on-on-reload={this.formData}
                         on-emit-event={(name, ...args) => this.emitEvent(name, args, index, key)}
                         on-mounted={($f) => this.add$f(index, key, $f)} rule={rule}
-                        option={this.option}/></ElFormItem></ElCol>
-                    {button ? <XlCol span={2} pull={1} push={1}>{this.makeIcon(keys.length, index, key)}</ElCol> : null}
-                </ElRow>
+                        option={this.option}/></XlFormItem></XlCol>
+                    {button ? <XlCol span={2} pull={1} push={1}>{this.makeIcon(keys.length, index, key)}</XlCol> : null}
+                </XlRow>
             })}</div>
     }
 }

@@ -21,6 +21,6 @@ export default {
             const Type = ctx.props.type === 'button' ? 'ElRadioButton' : 'ElRadio';
             delete props.value;
             return <Type {...{props}} key={NAME + Type + index + ctx.unique}/>;
-        }).concat(ctx.chlidren)}</ElRadioGroup>
+        }).concat(ctx.chlidren)}</XlRadioGroup>
     }
 }

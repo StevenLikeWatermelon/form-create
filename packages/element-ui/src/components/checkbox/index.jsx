@@ -53,6 +53,6 @@ export default {
                 const Type = this.type === 'button' ? 'ElCheckboxButton' : 'ElCheckbox';
                 delete props.value;
                 return <Type {...{props}} key={NAME + Type + index + this.unique}/>
-            }).concat(this.chlidren)}</ElCheckboxGroup>
+            }).concat(this.chlidren)}</XlCheckboxGroup>
     }
 }

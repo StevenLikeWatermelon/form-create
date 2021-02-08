@@ -29,7 +29,7 @@ export default {
     methods: {
         makeTree() {
             return <XlTree ref="tree" on-check-change={() => this.updateValue()}
-                on-node-click={() => this.updateValue()} {...this.ctx}>{this.children}</ElTree>;
+                on-node-click={() => this.updateValue()} {...this.ctx}>{this.children}</XlTree>;
         },
         onChange() {
             this.updateValue()

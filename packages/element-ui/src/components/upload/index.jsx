@@ -133,7 +133,7 @@ export default {
         makeUpload() {
             return <XlUpload ref="upload"
                 style={{display: 'inline-block'}} {...this.ctx}
-                key={this.key('upload')}>{this.children}</ElUpload>;
+                key={this.key('upload')}>{this.children}</XlUpload>;
         },
         initChildren() {
             if (!hasSlot(this.children, 'default'))
@@ -166,7 +166,7 @@ export default {
                 <xl-dialog modal={this.previewMask} title={this.modalTitle} visible={this.previewVisible}
                     on-close={this.handleCancel}>
                     <img alt="example" style="width: 100%" src={this.previewImage}/>
-                </el-dialog>
+                </xl-dialog>
             </div>);
     },
     mounted() {
