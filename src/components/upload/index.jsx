@@ -1,5 +1,4 @@
 import {hasSlot, toArray, toString, uniqueId} from '@form-create/utils';
-import style from '../../style/index.css';
 
 function parseFile(file, i) {
     return {
@@ -94,8 +93,8 @@ export default {
         },
 
         makeDefaultBtn() {
-            return <div class={style['fc-upload-btn']}>
-                <i class="el-icon-upload2"/>
+            return <div class={'fc-upload-btn'}>
+                <xl-button type="primary">上传</xl-button>
             </div>
         },
         makeItem(file, index) {
@@ -123,12 +122,12 @@ export default {
                 if (this.allowRemove)
                     icons.push(this.makeRemoveIcon(file, index));
 
-                return <div class={style['fc-upload-cover']}>{icons}</div>;
+                return <div class={'fc-upload-cover'}>{icons}</div>;
             }
         },
         makeFiles() {
             return this.uploadList.map((file, index) => <div key={this.key(index)}
-                class={style['fc-files']}>{(file.percentage !== undefined && file.status !== 'success') ? this.makeProgress(file, index) : [this.makeItem(file, index), this.makeIcons(file, index)]}</div>);
+                class={'fc-files'}>{(file.percentage !== undefined && file.status !== 'success') ? this.makeProgress(file, index) : [this.makeItem(file, index), this.makeIcons(file, index)]}</div>);
         },
         makeUpload() {
             return <XlUpload ref="upload"
@@ -160,10 +159,10 @@ export default {
 
         return (
             <div class={{
-                [style['fc-upload']]: true,
-                [style['fc-hide-btn']]: !isShow
+                ['fc-upload']: true,
+                ['fc-hide-btn']: !isShow
             }}>{[this.ctx.props.showFileList ? [] : this.makeFiles(), this.makeUpload()]}
-                <xl-dialog modal={this.previewMask} title={this.modalTitle} visible={this.previewVisible}
+                <xl-dialog modal={this.previewMask} title={this.modalTitle} visible={this.previewVisible} width={'90%'}
                     on-close={this.handleCancel}>
                     <img alt="example" style="width: 100%" src={this.previewImage}/>
                 </xl-dialog>
