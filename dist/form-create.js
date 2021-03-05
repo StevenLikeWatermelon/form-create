@@ -944,10 +944,12 @@
       makeDefaultBtn: function makeDefaultBtn() {
         var h = this.$createElement;
         return h("div", {
-          "class": style['fc-upload-btn']
-        }, [h("i", {
-          "class": "el-icon-upload2"
-        })]);
+          "class": 'fc-upload-btn'
+        }, [h("xl-button", {
+          "attrs": {
+            "type": "primary"
+          }
+        }, ["\u4E0A\u4F20"])]);
       },
       makeItem: function makeItem(file, index) {
         var h = this.$createElement;
@@ -1010,7 +1012,7 @@
           if (this.uploadType !== 'file' && this.handleIcon !== false || this.uploadType === 'file' && this.handleIcon) icons.push(this.makeHandleIcon(file, index));
           if (this.allowRemove) icons.push(this.makeRemoveIcon(file, index));
           return h("div", {
-            "class": style['fc-upload-cover']
+            "class": 'fc-upload-cover'
           }, [icons]);
         }
       },
@@ -1021,7 +1023,7 @@
         return this.uploadList.map(function (file, index) {
           return h("div", {
             "key": _this3.key(index),
-            "class": style['fc-files']
+            "class": 'fc-files'
           }, [file.percentage !== undefined && file.status !== 'success' ? _this3.makeProgress(file, index) : [_this3.makeItem(file, index), _this3.makeIcons(file, index)]]);
         });
       },
@@ -1064,12 +1066,13 @@
 
       this.initChildren();
       return h("div", {
-        "class": (_class = {}, _defineProperty(_class, style['fc-upload'], true), _defineProperty(_class, style['fc-hide-btn'], !isShow), _class)
+        "class": (_class = {}, _defineProperty(_class, 'fc-upload', true), _defineProperty(_class, 'fc-hide-btn', !isShow), _class)
       }, [[this.ctx.props.showFileList ? [] : this.makeFiles(), this.makeUpload()], h("xl-dialog", {
         "attrs": {
           "modal": this.previewMask,
           "title": this.modalTitle,
-          "visible": this.previewVisible
+          "visible": this.previewVisible,
+          "width": '90%'
         },
         "on": {
           "close": this.handleCancel
