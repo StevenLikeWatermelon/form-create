@@ -1194,7 +1194,7 @@
         }).filter(function (url) {
           return url !== undefined;
         });
-        this.$emit('input', this.maxLength === 1 ? files[0] || '' : files);
+        this.$emit('input', files);
       },
       handleCancel: function handleCancel() {
         this.previewVisible = false;
