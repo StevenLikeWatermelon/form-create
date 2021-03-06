@@ -94,7 +94,7 @@ export default {
 
         makeDefaultBtn() {
             return <div class={'fc-upload-btn'}>
-                <xl-button type="primary">上传</xl-button>
+                <i class="el-icon-upload2"/>
             </div>
         },
         makeItem(file, index) {

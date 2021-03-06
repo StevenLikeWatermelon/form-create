@@ -1094,11 +1094,9 @@
         var h = this.$createElement;
         return h("div", {
           "class": 'fc-upload-btn'
-        }, [h("xl-button", {
-          "attrs": {
-            "type": "primary"
-          }
-        }, ["\u4E0A\u4F20"])]);
+        }, [h("i", {
+          "class": "el-icon-upload2"
+        })]);
       },
       makeItem: function makeItem(file, index) {
         var h = this.$createElement;
