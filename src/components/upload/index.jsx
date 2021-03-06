@@ -140,7 +140,7 @@ export default {
         },
         update() {
             let files = this.$refs.upload.uploadFiles.map((file) => file.url).filter((url) => url !== undefined);
-            this.$emit('input', this.maxLength === 1 ? (files[0] || '') : files);
+            this.$emit('input', files);
         },
         handleCancel() {
             this.previewVisible = false;
