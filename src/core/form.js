@@ -95,7 +95,7 @@ export default class Form extends BaseForm {
             const titleProp = isString(rule.title) ? {title: rule.title} : rule.title;
             const info = this.options.info || {}, svn = [titleProp.title || ''];
             if (rule.info) {
-                svn.push(this.vNode.make(isTooltip(info) ? 'el-tooltip' : 'el-popover', {
+                svn.push(this.vNode.make(isTooltip(info) ? 'xl-tooltip' : 'xl-popover', {
                     props: {...info, content: rule.info},
                     key: `pop${unique}`
                 }, [
