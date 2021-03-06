@@ -14,7 +14,7 @@ export default {
     radio: 'fc-elm-radio',
     inputNumber: 'xl-input-number',
     input: 'xl-input',
-    formItem: 'xl-form-Item',
+    formItem: 'xl-form-item',
     form: 'xl-form',
     frame: 'fc-elm-frame',
     col: 'xl-col',

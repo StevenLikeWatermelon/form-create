@@ -50,7 +50,7 @@ export default {
         return <XlCheckboxGroup {...this.ctx} v-model={this.trueValue}
             on-input={this.onInput}>{this.options.map((opt, index) => {
                 const props = {...opt};
-                const Type = this.type === 'button' ? 'ElCheckboxButton' : 'ElCheckbox';
+                const Type = this.type === 'button' ? 'XlCheckboxButton' : 'XlCheckbox';
                 delete props.value;
                 return <Type {...{props}} key={NAME + Type + index + this.unique}/>
             }).concat(this.chlidren)}</XlCheckboxGroup>
