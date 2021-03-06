@@ -380,7 +380,7 @@
       }]), [this.options.map(function (opt, index) {
         var props = _objectSpread2({}, opt);
 
-        var Type = _this2.type === 'button' ? 'xl-check-boxButton' : 'xl-check-box';
+        var Type = _this2.type === 'button' ? 'xl-checkbox-button' : 'xl-checkbox';
         delete props.value;
         return h(Type, {
           "props": _objectSpread2({}, props),
