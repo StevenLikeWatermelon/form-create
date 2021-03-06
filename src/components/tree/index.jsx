@@ -28,8 +28,8 @@ export default {
     },
     methods: {
         makeTree() {
-            return <XlTree ref="tree" on-check-change={() => this.updateValue()}
-                on-node-click={() => this.updateValue()} {...this.ctx}>{this.children}</XlTree>;
+            return <xl-tree ref="tree" on-check-change={() => this.updateValue()}
+                on-node-click={() => this.updateValue()} {...this.ctx}>{this.children}</xl-tree>;
         },
         onChange() {
             this.updateValue()

@@ -367,7 +367,7 @@
       var _this2 = this;
 
       var h = arguments[0];
-      return h("XlCheckboxGroup", helper([{}, this.ctx, {
+      return h("xl-checkbox-group", helper([{}, this.ctx, {
         "on": {
           "input": this.onInput
         },
@@ -380,7 +380,7 @@
       }]), [this.options.map(function (opt, index) {
         var props = _objectSpread2({}, opt);
 
-        var Type = _this2.type === 'button' ? 'ElCheckboxButton' : 'ElCheckbox';
+        var Type = _this2.type === 'button' ? 'xl-check-boxButton' : 'xl-check-box';
         delete props.value;
         return h(Type, {
           "props": _objectSpread2({}, props),
@@ -592,7 +592,7 @@
           }).toString(),
           readonly: true
         };
-        return h("XlInput", helper([{}, {
+        return h("xl-input", helper([{}, {
           "props": props
         }, {
           "key": this.key('input')
@@ -604,7 +604,7 @@
               return _this.fileList = [];
             }
           }
-        }) : null, h("XlButton", helper([{
+        }) : null, h("xl-button", helper([{
           "attrs": {
             "icon": this.icon
           }
@@ -783,13 +783,13 @@
         if (!footer) return;
         return h("div", {
           "slot": "footer"
-        }, [closeBtn ? h("XlButton", {
+        }, [closeBtn ? h("xl-button", {
           "on": {
             "click": function click() {
               return _this8.onCancel() !== false && _this8.closeModel(true);
             }
           }
-        }, [closeBtnText]) : null, okBtn ? h("XlButton", {
+        }, [closeBtnText]) : null, okBtn ? h("xl-button", {
           "attrs": {
             "type": "primary"
           },
@@ -883,10 +883,10 @@
       }
     },
     render: function render(h, ctx) {
-      return h("XlRadioGroup", helper([{}, ctx.data]), [ctx.props.options.map(function (opt, index) {
+      return h("xl-radio-group", helper([{}, ctx.data]), [ctx.props.options.map(function (opt, index) {
         var props = _objectSpread2({}, opt);
 
-        var Type = ctx.props.type === 'button' ? 'ElRadioButton' : 'ElRadio';
+        var Type = ctx.props.type === 'button' ? 'xl-radio-button' : 'xl-radio';
         delete props.value;
         return h(Type, {
           "props": _objectSpread2({}, props),
@@ -914,9 +914,9 @@
       }
     },
     render: function render(h, ctx) {
-      return h("XlSelect", helper([{}, ctx.data]), [ctx.props.options.map(function (props, index) {
+      return h("xl-select", helper([{}, ctx.data]), [ctx.props.options.map(function (props, index) {
         var slot = props.slot ? toDefSlot(props.slot, h) : [];
-        return h("XlOption", {
+        return h("xl-option", {
           "props": _objectSpread2({}, props),
           "key": NAME$3 + index + ctx.props.unique
         }, [slot]);
@@ -962,7 +962,7 @@
         var _this = this;
 
         var h = this.$createElement;
-        return h("XlTree", helper([{
+        return h("xl-tree", helper([{
           "ref": "tree",
           "on": {
             "check-change": function checkChange() {
@@ -1142,7 +1142,7 @@
       },
       makeProgress: function makeProgress(file, index) {
         var h = this.$createElement;
-        return h("XlProgress", helper([{}, {
+        return h("xl-progress", helper([{}, {
           "props": {
             percentage: file.percentage,
             type: 'circle',
@@ -1178,7 +1178,7 @@
       },
       makeUpload: function makeUpload() {
         var h = this.$createElement;
-        return h("XlUpload", helper([{
+        return h("xl-upload", helper([{
           "ref": "upload",
           "style": {
             display: 'inline-block'
@@ -4045,18 +4045,18 @@
         "key": 'con'
       }, [keys.map(function (key, index) {
         var rule = _this8.cacheRule[key];
-        return h("XlRow", {
+        return h("xl-row", {
           "attrs": {
             "align": "middle",
             "type": "flex"
           },
           "key": key,
           "style": "background-color:#f5f7fa;padding:10px;border-radius:5px;margin-bottom:10px;"
-        }, [h("XlCol", {
+        }, [h("xl-col", {
           "attrs": {
             "span": button ? 20 : 24
           }
-        }, [h("XlFormItem", [h("FormCreate", {
+        }, [h("xl-formItem", [h("FormCreate", {
           "on": {
             "change": _this8.formData,
             "set-value": _this8.formData,
@@ -4076,7 +4076,7 @@
             "rule": rule,
             "option": _this8.option
           }
-        })])]), button ? h("XlCol", {
+        })])]), button ? h("xl-col", {
           "attrs": {
             "span": 2,
             "pull": 1,
@@ -4619,7 +4619,7 @@
     radio: 'fc-elm-radio',
     inputNumber: 'xl-input-number',
     input: 'xl-input',
-    formItem: 'xl-form-Item',
+    formItem: 'xl-form-item',
     form: 'xl-form',
     frame: 'fc-elm-frame',
     col: 'xl-col',

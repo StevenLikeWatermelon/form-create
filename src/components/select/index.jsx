@@ -14,12 +14,12 @@ export default {
         },
     },
     render(h, ctx) {
-        return <XlSelect {...ctx.data}>{ctx.props.options.map((props, index) => {
+        return <xl-select {...ctx.data}>{ctx.props.options.map((props, index) => {
 
             const slot = props.slot ? toDefSlot(props.slot, h) : [];
 
-            return <XlOption {...{props}}
-                key={NAME + index + ctx.props.unique}>{slot}</XlOption>
-        }).concat(ctx.chlidren)}</XlSelect>;
+            return <xl-option {...{props}}
+                key={NAME + index + ctx.props.unique}>{slot}</xl-option>
+        }).concat(ctx.chlidren)}</xl-select>;
     }
 }

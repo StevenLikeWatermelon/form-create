@@ -16,11 +16,11 @@ export default {
         },
     },
     render(h, ctx) {
-        return <XlRadioGroup {...ctx.data}>{ctx.props.options.map((opt, index) => {
+        return <xl-radio-group {...ctx.data}>{ctx.props.options.map((opt, index) => {
             const props = {...opt};
-            const Type = ctx.props.type === 'button' ? 'XlRadioButton' : 'XlRadio';
+            const Type = ctx.props.type === 'button' ? 'xl-radio-button' : 'xl-radio';
             delete props.value;
             return <Type {...{props}} key={NAME + Type + index + ctx.unique}/>;
-        }).concat(ctx.chlidren)}</XlRadioGroup>
+        }).concat(ctx.chlidren)}</xl-radio-group>
     }
 }

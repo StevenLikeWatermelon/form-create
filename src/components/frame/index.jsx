@@ -174,11 +174,11 @@ export default {
                 readonly: true
             };
 
-            return <XlInput props={props} key={this.key('input')}>
+            return <xl-input props={props} key={this.key('input')}>
                 {this.fileList.length ? <i slot="suffix" class="el-input__icon el-icon-circle-close"
                     on-click={() => this.fileList = []}/> : null}
-                <XlButton icon={this.icon} on={{'click': () => this.showModel()}} slot="append"/>
-            </XlInput>
+                <xl-button icon={this.icon} on={{'click': () => this.showModel()}} slot="append"/>
+            </xl-input>
         },
 
         makeGroup(children) {
@@ -279,10 +279,10 @@ export default {
 
             if (!footer) return;
             return <div slot="footer">
-                {closeBtn ? <XlButton
-                    on-click={() => (this.onCancel() !== false && this.closeModel(true))}>{closeBtnText}</XlButton> : null}
-                {okBtn ? <XlButton type="primary"
-                    on-click={() => (this.onOk() !== false && this.closeModel())}>{okBtnText}</XlButton> : null}
+                {closeBtn ? <xl-button
+                    on-click={() => (this.onCancel() !== false && this.closeModel(true))}>{closeBtnText}</xl-button> : null}
+                {okBtn ? <xl-button type="primary"
+                    on-click={() => (this.onOk() !== false && this.closeModel())}>{okBtnText}</xl-button> : null}
             </div>
         }
     },

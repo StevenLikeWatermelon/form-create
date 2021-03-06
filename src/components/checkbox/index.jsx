@@ -47,12 +47,12 @@ export default {
         this.update();
     },
     render() {
-        return <XlCheckboxGroup {...this.ctx} v-model={this.trueValue}
+        return <xl-checkbox-group {...this.ctx} v-model={this.trueValue}
             on-input={this.onInput}>{this.options.map((opt, index) => {
                 const props = {...opt};
-                const Type = this.type === 'button' ? 'XlCheckboxButton' : 'XlCheckbox';
+                const Type = this.type === 'button' ? 'xl-check-boxButton' : 'xl-check-box';
                 delete props.value;
                 return <Type {...{props}} key={NAME + Type + index + this.unique}/>
-            }).concat(this.chlidren)}</XlCheckboxGroup>
+            }).concat(this.chlidren)}</xl-checkbox-group>
     }
 }

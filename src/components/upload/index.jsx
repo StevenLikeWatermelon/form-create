@@ -111,7 +111,7 @@ export default {
                 on-click={() => this.handleClick(file)} key={this.key('hi' + index)}/>;
         },
         makeProgress(file, index) {
-            return <XlProgress props={{percentage: file.percentage, type: 'circle', width: 52}} style="margin-top:2px;"
+            return <xl-progress props={{percentage: file.percentage, type: 'circle', width: 52}} style="margin-top:2px;"
                 key={this.key('pg' + index)}/>
         },
         makeIcons(file, index) {
@@ -130,9 +130,9 @@ export default {
                 class={'fc-files'}>{(file.percentage !== undefined && file.status !== 'success') ? this.makeProgress(file, index) : [this.makeItem(file, index), this.makeIcons(file, index)]}</div>);
         },
         makeUpload() {
-            return <XlUpload ref="upload"
+            return <xl-upload ref="upload"
                 style={{display: 'inline-block'}} {...this.ctx}
-                key={this.key('upload')}>{this.children}</XlUpload>;
+                key={this.key('upload')}>{this.children}</xl-upload>;
         },
         initChildren() {
             if (!hasSlot(this.children, 'default'))
